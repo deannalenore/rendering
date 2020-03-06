@@ -1,5 +1,5 @@
 
-function renderCircles(circles) {
+function renderCircles(cs) {
     // HINT: You probably need to write a for loop!
     //       Or, if you're feeling fancy, use .map() 
     for (var i=0; i < circles.length; i++){
@@ -18,6 +18,15 @@ function renderCircles(circles) {
             <code>${circles.[i].radius}</code>
         </div>
     `
+}
+
+function renderCircle(c) {
+    return `<div style="width: ${c.radius}px;
+                        height: ${c.radius}px;
+                        background-color: ${c.color};
+                        border-radius: ${c.radius}px;
+                        margin: 10px auto">
+            </div>`
 }
 
 function circles() {
