@@ -1,10 +1,16 @@
 
 function renderRectangle(rectangle) {
-    return `
-        <div class="text-center mt-5">
-            <code>${JSON.stringify(rectangle)}</code>
-        </div>
-    `
+    var boldText = function(){
+        return "some bold text";
+    }
+    
+    var blah = "some italics text";
+        return `<i>${blah}</i>`;
+    //return `
+        //<div class="text-center mt-5">
+            //<code>${JSON.stringify(rectangle)}</code>
+        //</div>
+    
 }
 
 function rectangle() {
@@ -16,6 +22,6 @@ function rectangle() {
         color: "#FF00FF"
     }
 
-    content.innerHTML = renderRectangle(rectangleAbstraction);
+    content.innerHTML = renderRectangle(rectangleAbstraction);// setting inner HTML to the result of the renderRectangle function"A rectangle will go here"
 
 }
