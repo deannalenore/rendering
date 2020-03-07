@@ -1,32 +1,19 @@
-
-function renderCircles(cs) {
+function renderCircles(circles) {
     // HINT: You probably need to write a for loop!
     //       Or, if you're feeling fancy, use .map() 
-    for (var i=0; i < circles.length; i++){
-
-    }
-    var circlesString = [];
-    `<div style = radius:${circles.radius}; color:${circles.background-color};</div>`
-    circlesString.push(circlesAbstraction); 
-    
-    
-    console.log(circlesString);
-    
     return `
         <div class="text-center mt-5">
-        <div style = radius:${circles.radius}; color:${circles.background-color};
-            <code>${circles.[i].radius}</code>
+            <code>${JSON.stringify(circles)}</code>
+            
+            <div style = "radius:${circles.radius}px; 
+            background-color:${circles.color};
+            </div>
+
         </div>
     `
 }
-
-function renderCircle(c) {
-    return `<div style="width: ${c.radius}px;
-                        height: ${c.radius}px;
-                        background-color: ${c.color};
-                        border-radius: ${c.radius}px;
-                        margin: 10px auto">
-            </div>`
+for (i=0, i<circles.Abstraction.length, i++){
+    
 }
 
 function circles() {
